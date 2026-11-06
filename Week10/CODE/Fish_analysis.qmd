@@ -21,5 +21,6 @@ Post committing our data we are now going to compare the scale length of fish in
 fish_data |>
   group_by(lakeid) |>
   summarize(min_scale_length = min(scalelength, na.rm = TRUE),
-            max_scale_length = max(scalelength, na.rm = TRUE))
+            max_scale_length = max(scalelength, na.rm = TRUE),
+            mean_scale_length = mean(scalelength, na.rm = TRUE))
 ```
