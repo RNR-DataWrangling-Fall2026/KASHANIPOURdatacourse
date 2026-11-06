@@ -1,0 +1,16 @@
+---
+title: "Fish analysis"
+author: "Myles Kashanipour"
+format: html
+editor: visual
+---
+
+## Fish analysis project
+
+Step 1 load packages and read in data
+
+```{r}
+library(tidyverse)
+
+fish_data <- read_csv("../DATA/Gaeta_etal_CLC_data.csv")
+```
