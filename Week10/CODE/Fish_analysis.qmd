@@ -1,7 +1,7 @@
 ---
 title: "Fish analysis"
 author: "Myles Kashanipour"
-format: html
+format: gfm
 editor: visual
 ---
 
@@ -29,4 +29,9 @@ fish_data |>
 FishData<-fish_data|>filter(scalelength >1)
 FishData
 write_csv(FishData,"../DATA/FishScaleData.csv")
+```
+
+```{r}
+ggplot(fish_data, aes(scalelength)) +
+  geom_histogram()
 ```
