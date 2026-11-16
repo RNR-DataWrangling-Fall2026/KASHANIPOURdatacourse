@@ -24,3 +24,9 @@ fish_data |>
             max_scale_length = max(scalelength, na.rm = TRUE),
             mean_scale_length = mean(scalelength, na.rm = TRUE))
 ```
+
+```{r}
+FishData<-fish_data|>filter(scalelength >1)
+FishData
+write_csv(FishData,"../DATA/FishScaleData.csv")
+```
